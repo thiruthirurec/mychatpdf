@@ -1,7 +1,7 @@
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain_openai import ChatOpenAI
-from langchain.text_splitter import CharacterTextSplitter
+from langchain_text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
 from langchain.memory import ConversationBufferMemory
@@ -131,3 +131,4 @@ if st.session_state.processComplete:
 # Display initial instructions
 else:
     st.write("👈 Upload your PDFs in the sidebar to get started!")
+
